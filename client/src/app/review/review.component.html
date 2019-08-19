@@ -1,0 +1,9 @@
+<form (submit)="placeReview()">
+    <p>
+        Rating: <input type="number" name="review.rating" [(ngModel)]="review.rating" />
+    </p>
+    <p>
+        Review: <input type="text" name="review.comment" [(ngModel)]="review.comment" />
+    </p>
+    <input type="submit" value="Review that cake!" />
+</form>

@@ -1,0 +1,9 @@
+<fieldset>
+    <legend>{{ cakeToShow.baker }}</legend>
+    <img src="{{ cakeToShow.img }}" alt="cake" width="500px" />
+    <ul>
+        <li *ngFor="let review of cakeToShow.reviews">
+            <strong>{{ review.rating }}</strong> -- {{ review.comment }}
+        </li>
+    </ul>
+</fieldset>
